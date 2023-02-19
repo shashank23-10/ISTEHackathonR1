@@ -2,10 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 .about {
   background-color: black;
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
   display: flex;
   min-height: 100vh;
   color: white;
@@ -32,7 +33,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .about .row .col #fol1 {
   color: #e56623;
@@ -45,21 +47,76 @@
 }
 .about .quote {
   color: #fff;
+  display: flex;
+  position: relative;
 }
 .about .quotes {
   font-size: 1.9rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .about .auth {
-  font-size: 0.5rem;
+  font-size: 1rem;
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
 }
 .about img {
-  width: 80%;
+  width: 100%;
   min-height: 90vh;
 }
 .about .sec-side {
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   font-size: 9.3rem;
-  color: #fff;
+  color: #969696;
   min-height: 90vh;
+}
+
+.timeline {
+  background-color: #ee6461;
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  min-height: 100vh;
+}
+.timeline .main-container {
+  margin-right: 30%;
+}
+.timeline .para .folder {
+  position: relative;
+  text-align: center;
+}
+.timeline .para .folder p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+}
+.timeline .sec-side {
+  writing-mode: vertical-lr;
+  font-size: 7.4rem;
+  color: #431c1b;
+  min-height: 90vh;
+}
+.timeline .para {
+  display: flex;
+}
+.timeline i {
+  transform: scaleX(-1);
+  font-size: 11rem;
+  color: black;
+  margin-right: 2rem;
+}
+.timeline .text {
+  margin-top: 1rem;
+}
+.timeline .text h1 {
+  color: white;
+  font-size: 2.75rem;
+}
+.timeline .text p {
+  color: black;
 }
